@@ -1,0 +1,15 @@
+.container{
+    border: solid;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 60vw;
+
+}
+
+.macro-summary{
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+}
