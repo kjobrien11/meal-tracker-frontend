@@ -1,0 +1,16 @@
+.container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 20vw;
+}
+h4 {
+    padding: 0rem;
+    margin: 0rem;
+}
+
+li{
+    margin: 0rem;
+    padding: 0rem;
+}
