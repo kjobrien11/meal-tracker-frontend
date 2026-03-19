@@ -5,6 +5,7 @@
     align-items: center;
     width: 40vw;
     margin: 1rem;
+    box-shadow:  0.5px 0.5px 2px rgba(0,0,0,0.2);
 }
 
 .food-container {
