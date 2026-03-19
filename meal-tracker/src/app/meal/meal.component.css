@@ -7,6 +7,12 @@
     margin: 1rem;
 }
 
+.food-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1rem;
+}
+
 details {
   border: 1px solid #bbbbbb;
   border-radius: 6px;
