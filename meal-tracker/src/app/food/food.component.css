@@ -3,7 +3,6 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    width: 20vw;
 }
 
 li{
@@ -12,4 +11,8 @@ li{
 }
 h4{
     font-weight: 400;
+}
+
+.charts-container{
+    width: 125px;
 }

@@ -1,9 +1,13 @@
 <div class = "container">
-    <h4><b>Ground Turkey:</b> 355 Calories</h4>
-    <ul class = "macros">
-        <li><b>Protein:</b> 22 grams</li>
-        <li><b>Carbs:</b> 0 grams</li>
-        <li><b>Fats:</b> 9 grams</li>
-    </ul>
+    <h3><b>Ground Turkey</b> </h3>
+    <h4>355 Calories</h4>
+    
+    <div style="width: 200px; height: 200px; margin-top: 10px;" >
+    <canvas baseChart
+        [data]="pieChartData"
+        type="pie"
+        [options]="pieChartOptions">
+    </canvas>
+  </div>
         
 </div>
