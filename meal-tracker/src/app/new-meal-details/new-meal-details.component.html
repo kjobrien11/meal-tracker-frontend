@@ -1,0 +1,31 @@
+<form [formGroup]="mealForm">
+
+  <div class="form-group">
+    <label>Meal Name</label>
+    <input type="text" formControlName="mealName" 
+    placeholder="Lunch"/>
+  </div>
+
+  <div formArrayName="foods">
+
+    <div *ngFor="let food of foods.controls; let i = index" [formGroupName]="i" class="food-row">
+        <select formControlName="foodName">
+            <option value="" disabled>Select food</option>
+            <option *ngFor="let f of predefinedFoods" [value]="f">{{ f }}</option>
+        </select>
+
+        <input type="number" placeholder="Grams" formControlName="grams"/>
+
+        <button type="button" (click)="removeFood(i)">Remove</button>
+    </div>
+
+  </div>
+
+  <div class = "buttons-container">
+    <button type="button" (click)="addFood()">+ Add Food</button>
+    <button type="submit" [disabled]="mealForm.invalid">Save Meal</button>
+  </div>
+
+
+
+</form>

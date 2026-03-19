@@ -9,3 +9,14 @@ body {
   padding: 0rem;
   margin: 0rem;
 }
+html, body { height: 100%; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+
+button {
+    padding: 8px 14px;
+    border-radius: 6px;
+    border: solid rgb(226, 226, 226);
+    cursor: pointer;
+    font-size: 14px;
+    transition: all 0.2s ease;
+}
