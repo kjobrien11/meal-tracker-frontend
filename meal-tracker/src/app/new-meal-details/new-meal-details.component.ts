@@ -33,7 +33,7 @@ export class NewMealDetailsComponent implements OnInit {
   createFood(): FormGroup {
     return new FormGroup({
       foodName: new FormControl('', Validators.required),
-      grams: new FormControl('', [Validators.required, Validators.min(0)])
+      grams: new FormControl('', [Validators.required, Validators.min(1)])
     });
   }
 
