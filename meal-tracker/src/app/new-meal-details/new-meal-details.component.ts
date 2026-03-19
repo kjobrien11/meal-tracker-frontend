@@ -12,7 +12,14 @@ import { ReactiveFormsModule, FormGroup, FormControl, Validators, FormArray } fr
   styleUrl: './new-meal-details.component.css',
   standalone: true
 })
-export class NewMealDetailsComponent implements OnInit{
+export class NewMealDetailsComponent implements OnInit {
+
+  predefinedFoods: string[] = [
+    'Ground Turkey',
+    'Ground Beef',
+    'Roasted Sweet Potatoes',
+    'Roasted Potatoes',
+  ];
 
   ngOnInit(): void {
     this.addFood();
@@ -31,15 +38,15 @@ export class NewMealDetailsComponent implements OnInit{
   }
 
   get foods(): FormArray {
-  return this.mealForm.get('foods') as FormArray;
-}
+    return this.mealForm.get('foods') as FormArray;
+  }
 
-addFood() {
-  this.foods.push(this.createFood());
-}
+  addFood() {
+    this.foods.push(this.createFood());
+  }
 
-removeFood(index: number) {
-  this.foods.removeAt(index);
-}
+  removeFood(index: number) {
+    this.foods.removeAt(index);
+  }
 
 }

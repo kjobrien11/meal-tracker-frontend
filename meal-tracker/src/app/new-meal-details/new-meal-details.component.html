@@ -8,24 +8,15 @@
 
   <div formArrayName="foods">
 
-    <div
-      *ngFor="let food of foods.controls; let i = index"
-      [formGroupName]="i"
-      class="food-row"
-    >
-      <input
-        type="text"
-        placeholder="Food name"
-        formControlName="foodName"
-      />
+    <div *ngFor="let food of foods.controls; let i = index" [formGroupName]="i" class="food-row">
+        <select formControlName="foodName">
+            <option value="" disabled>Select food</option>
+            <option *ngFor="let f of predefinedFoods" [value]="f">{{ f }}</option>
+        </select>
 
-      <input
-        type="number"
-        placeholder="Grams"
-        formControlName="grams"
-      />
+        <input type="number" placeholder="Grams" formControlName="grams"/>
 
-      <button type="button" (click)="removeFood(i)">Remove</button>
+        <button type="button" (click)="removeFood(i)">Remove</button>
     </div>
 
   </div>
