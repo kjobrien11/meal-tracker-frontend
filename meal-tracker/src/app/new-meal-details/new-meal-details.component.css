@@ -1,0 +1,33 @@
+form {
+    width: 30vw;
+    padding: 1rem;
+}
+h2{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+    padding: 1rem;
+}
+
+input {
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+}
+
+.food-row {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 10px;
+}
+
+.food-row input {
+    padding: 6px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+}
