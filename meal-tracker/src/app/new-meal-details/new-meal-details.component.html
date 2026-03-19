@@ -2,7 +2,8 @@
 
   <div class="form-group">
     <label>Meal Name</label>
-    <input type="text" formControlName="mealName" />
+    <input type="text" formControlName="mealName" 
+    placeholder="Lunch"/>
   </div>
 
   <div formArrayName="foods">
@@ -29,12 +30,11 @@
 
   </div>
 
-  <!-- Add Food Button -->
-  <button type="button" (click)="addFood()">+ Add Food</button>
+  <div class = "buttons-container">
+    <button type="button" (click)="addFood()">+ Add Food</button>
+    <button type="submit" [disabled]="mealForm.invalid">Save Meal</button>
+  </div>
 
-  <!-- Submit -->
-  <button type="submit" [disabled]="mealForm.invalid">
-    Save Meal
-  </button>
+
 
 </form>

@@ -16,7 +16,6 @@ export class NewMealDetailsComponent implements OnInit{
 
   ngOnInit(): void {
     this.addFood();
-    this.addFood();
   }
 
   mealForm = new FormGroup({
@@ -27,7 +26,7 @@ export class NewMealDetailsComponent implements OnInit{
   createFood(): FormGroup {
     return new FormGroup({
       foodName: new FormControl('', Validators.required),
-      grams: new FormControl(0, [Validators.required, Validators.min(0)])
+      grams: new FormControl('', [Validators.required, Validators.min(0)])
     });
   }
 

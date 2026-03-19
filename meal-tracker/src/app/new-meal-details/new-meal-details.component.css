@@ -24,6 +24,7 @@ input {
     display: flex;
     gap: 10px;
     margin-bottom: 10px;
+    padding-left: 1rem;
 }
 
 .food-row input {
@@ -31,3 +32,11 @@ input {
     border: 1px solid #ccc;
     border-radius: 6px;
 }
+
+.buttons-container{
+    padding: 1rem;
+    display: flex;
+    gap: 8px;
+    
+}
+
